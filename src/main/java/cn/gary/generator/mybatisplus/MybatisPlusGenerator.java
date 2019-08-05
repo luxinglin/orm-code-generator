@@ -19,7 +19,6 @@ import static cn.gary.generator.common.PropertyUtil.getPropertyValue;
  */
 @Slf4j
 public class MybatisPlusGenerator {
-    static final String AUTHOR = "Lu, Xing-Lin";
     /**
      * 配置文件路径
      */
@@ -53,12 +52,8 @@ public class MybatisPlusGenerator {
         String projectPath = System.getProperty("user.dir");
         //生成文件输出目录
         gc.setOutputDir(projectPath + "/src/main/java");
-        try {
-            //开发人员
-            gc.setAuthor(System.getProperties().get("user.name").toString());
-        } catch (Exception ex) {
-            gc.setAuthor(AUTHOR);
-        }
+        //开发人员
+        gc.setAuthor(System.getProperty("user.name"));
         //是否打开输出目录
         gc.setOpen(false);
         //service命名方式
