@@ -15,8 +15,8 @@
     
   
 #### 2. Mybatis-Plus框架
-    2.1. 1.1. 更新配置/src/main/resources/generator.properties文件，包括：jdbc相关配置，基础包路径，表名前缀、表名称配置，多个数据表以英文半角逗号进行分隔；
+    2.1. 更新配置/src/main/resources/generator.properties文件，包括：jdbc相关配置，基础包路径，表名前缀、表名称配置，多个数据表以英文半角逗号进行分隔；
     
-    1.2. 执行cn.gary.generator.mybatisplus.MybatisPlusGenerator的main方法；
+    2.2. 执行cn.gary.generator.mybatisplus.MybatisPlusGenerator的main方法；
     
-    1.3. 检查生成结果；
+    2.3. 检查生成结果；
