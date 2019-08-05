@@ -1,0 +1,8 @@
+# folders
+/.idea/
+/target/
+
+# files
+*.iml
+
+/src/main/resources/generator-bak.properties
