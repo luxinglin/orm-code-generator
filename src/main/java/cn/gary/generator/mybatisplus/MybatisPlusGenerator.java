@@ -53,8 +53,12 @@ public class MybatisPlusGenerator {
         String projectPath = System.getProperty("user.dir");
         //生成文件输出目录
         gc.setOutputDir(projectPath + "/src/main/java");
-        //开发人员
-        gc.setAuthor(AUTHOR);
+        try {
+            //开发人员
+            gc.setAuthor(System.getProperties().get("user.name").toString());
+        } catch (Exception ex) {
+            gc.setAuthor(AUTHOR);
+        }
         //是否打开输出目录
         gc.setOpen(false);
         //service命名方式
